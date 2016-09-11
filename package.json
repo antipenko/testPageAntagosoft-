@@ -1,0 +1,23 @@
+{
+  "name": "start",
+  "version": "1.0.0",
+  "description": "foundation framework with gulp for develope web-sites",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "antipa",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.15.0",
+    "gulp": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-imagemin": "*",
+    "gulp-rename": "*",
+    "gulp-sass": "*",
+    "gulp-sourcemaps": "*",
+    "gulp-watch": "*",
+    "gulp.spritesmith": "*",
+    "livereload": "^0.5.0"
+  }
+}
