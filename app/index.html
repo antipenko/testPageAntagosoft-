@@ -11,34 +11,118 @@
 </head>
 <body>
 
-	<div class="top-bar">
-		<div class="top-bar-title">
-			<a href="#" class="ba-logo">Logo</a>
+	<div class="row ts-anketa">
 
-			<span class="float-right hide-for-medium" data-responsive-toggle="responsive-menu" data-hide-for="medium">
-				<span class="menu-icon dark" data-toggle></span>
-			</span>
-		</div>
-
-		<div id="responsive-menu">
-			<div class="top-bar-right">
-				<ul class="vertical medium-horizontal menu">
-					<li>
-						<a href="#">One</a>
-					</li>
-					<li><a href="#">Two</a></li>
-					<li><a href="#">Three</a></li>
-				</ul>
+		<header class="ts-header">
+			<div class="columns ts-user cf">
+				<img src="img/user.jpg" alt="Вероника Ростова" class="ts-user__img">
+				<h2 class="ts-user__name">Вероника Ростова</h2>
+				<p class="ts-user__position">Менеджер по продажам</p>
+				<p class="ts-user__desc">Подберу для вас самые лучшие предложения. Мои услуги абсолютно бесплатны.</p>
 			</div>
-		</div>
+		</header>
+		<main>
+			<div class="columns medium-8 small-12 medium-offset-4">
+				<div class="services">
+					<table class="table">
+						<tr class="table-head">
+							<th class="table-service"></th>
+							<th class="table-rainting text-center">Услуги</th>
+						</tr>
+						<tr>
+							<td class="table-service empty-cell"></td>
+							<td class="table-rating  empty-cell text-center"></td>
+						</tr>
+						<tr>
+							<td class="table-service radius progress">
+								<span class="metter success" style="width:100%;"><i> Ручное бронирование </i></span>
+							</td>
+							<td class="table-rating text-center">11</td>
+						</tr>
+						<tr>
+							<td class="table-service radius progress">
+								<span class="metter" style="width:14%;"> <i> Пакетные туры </i> </span>
+							</td>
+							<td class="table-rating text-center">3</td>
+						</tr>
+						<tr>
+							<td class="table-service radius progress">
+								<span class="metter" style="width:10%;"> <i> Отели </i> </span>
+							</td>
+							<td class="table-rating text-center">1</td>
+						</tr>
+						<tr>
+							<td class="table-service empty-cell "></td>
+							<td class="table-rating  empty-cell text-center"></td>
+						</tr>
+						<tr>
+							<td class="table-service">Всего</td>
+							<td class="table-rating text-center">15</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<section class="columns ts-reviews">				
+				<div class="ts-info-panel">
+					<ul class="ts-button-panel">
+						<li class="ts-button-panel__item">
+							<button type='button' class="button-reviews button-reviews_active">Последние отзывы</button>
+						</li>
+						<li class="ts-button-panel__item">
+							<button type='button' class="button-reviews">Все отзывы</button>
+						</li>
+						<li class="ts-button-panel__item">
+							<ul>
+								<li>
+									<button type="button" class="button-like" title="Like"> 
+										<span class=" visuallyhidden">Мне нравиться</span>
+									</button>
+									<span>131</span>
+								</li>
+								<li>
+									<button type="button" class="button-new-comment" id="comment" title="Write coment">
+										<span class=" visuallyhidden">Оставить комметарий</span>
+									</button>
+									<span>14</span>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+
+				<ul class="ts-comment-list" id="comment-list">
+					<li class="ts-comment-list__item ts-comment">
+						<p class="ts-comment-info">
+							<span class='ts-comment__name'>Самуил</span>
+							<time class='ts-comment__date' datetime="13 октября декабря 2016 г.">13 октября 2011</time>
+						</p>
+						<p class="ts-comment__text">Привет верунь! ниче се ты крутая!</p>
+					</li>
+					<li class="ts-comment-list__item">
+						<p>
+							<span class='ts-comment__name'>Лилия Семеновна</span>
+							<time class='ts-comment__date' datetime="14 октября 2016 г.">14 Октября 2011</time>
+						</p>
+						<p class="ts-comment__text">Вероника, здраствуйте! Есть такой вопрос: Особый вид куниц жизненно стабилизирует кинетический момент, это и есть всемирно известный центр огранки алмазов и торговли бриллиантами?</p>
+					</li>
+					<li class="ts-comment-list__item">
+						<p>
+							<span class='ts-comment__name'>Лилия Семеновна</span>
+							<time class='ts-comment__date' datetime="14 октября 2016 г.">14 Октября 2011</time>
+						</p>
+						<p class="ts-comment__text">Вероника, здраствуйте! Есть такой вопрос: Особый вид куниц жизненно стабилизирует кинетический момент?</p>
+					</li>
+				</ul>
+			</section>
+			<section class="columns ts-new-review text-center">
+				<div  class="ts-new-review__form">
+					<textarea type="text" name="text-field" id="text" cols="30" rows="5" required></textarea>	
+					<button type="submit" class="button" id="comment-btn">Написать консультанту</button>				
+				</div>
+			</section>
+		</main>
+		
 	</div>
-
-	<main>
-		<div class="row">
-			<div></div>
-		</div>
-	</main>
-
 	<script src="js/jquery.min.js"></script>
 	<script src="js/what-input.min.js"></script>
 	<script src="js/foundation.min.js"></script>
